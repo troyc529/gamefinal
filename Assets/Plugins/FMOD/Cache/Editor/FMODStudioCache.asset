@@ -1,0 +1,261 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9161084910641736533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/music/test/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637868369987478584
+  FileSizes:
+  - Name: Desktop
+    Value: 1062
+  Exists: 1
+--- !u!114 &-8047286399480296193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/3rdArea
+  m_EditorClassIdentifier: 
+  Path: event:/3rdArea
+  Guid:
+    Data1: 423268783
+    Data2: 1222886452
+    Data3: 414680738
+    Data4: 1552577753
+  Banks:
+  - {fileID: 429483167310213535}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 52048
+--- !u!114 &-1948662604053275649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/music/test/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637868369987438453
+  FileSizes:
+  - Name: Desktop
+    Value: 1036
+  Exists: 1
+--- !u!114 &-65779078296178012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/1stArea.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/music/test/Build/Desktop/1stArea.bank
+  Name: 1stArea
+  StudioPath: bank:/1stArea
+  lastModified: 637868369987077263
+  FileSizes:
+  - Name: Desktop
+    Value: 699808
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -9161084910641736533}
+  - {fileID: -1948662604053275649}
+  - {fileID: 311683941111463553}
+  - {fileID: -65779078296178012}
+  - {fileID: 1760490179658399989}
+  - {fileID: 429483167310213535}
+  EditorEvents:
+  - {fileID: 863634417142908441}
+  - {fileID: 4235040325988002351}
+  - {fileID: 1399053351514214878}
+  - {fileID: -8047286399480296193}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -1948662604053275649}
+  StringsBanks:
+  - {fileID: -9161084910641736533}
+  cacheTime: 637868369987950153
+  cacheVersion: 10
+--- !u!114 &311683941111463553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/menuMusic.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/music/test/Build/Desktop/menuMusic.bank
+  Name: menuMusic
+  StudioPath: bank:/menuMusic
+  lastModified: 637868369987709357
+  FileSizes:
+  - Name: Desktop
+    Value: 685152
+  Exists: 1
+--- !u!114 &429483167310213535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/3rdArea.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/music/test/Build/Desktop/3rdArea.bank
+  Name: 3rdArea
+  StudioPath: bank:/3rdArea
+  lastModified: 637868369987950153
+  FileSizes:
+  - Name: Desktop
+    Value: 694048
+  Exists: 1
+--- !u!114 &863634417142908441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MenuMusic
+  m_EditorClassIdentifier: 
+  Path: event:/MenuMusic
+  Guid:
+    Data1: -1369249523
+    Data2: 1128618444
+    Data3: 627271816
+    Data4: 793138652
+  Banks:
+  - {fileID: 311683941111463553}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 46451
+--- !u!114 &1399053351514214878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/2ndArea
+  m_EditorClassIdentifier: 
+  Path: event:/2ndArea
+  Guid:
+    Data1: 827883900
+    Data2: 1129097759
+    Data3: 1726902963
+    Data4: 282364402
+  Banks:
+  - {fileID: 1760490179658399989}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 34698
+--- !u!114 &1760490179658399989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/2ndArea.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/music/test/Build/Desktop/2ndArea.bank
+  Name: 2ndArea
+  StudioPath: bank:/2ndArea
+  lastModified: 637868369987388293
+  FileSizes:
+  - Name: Desktop
+    Value: 502912
+  Exists: 1
+--- !u!114 &4235040325988002351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/1stArea
+  m_EditorClassIdentifier: 
+  Path: event:/1stArea
+  Guid:
+    Data1: -195009850
+    Data2: 1280877331
+    Data3: 1731352742
+    Data4: 321890784
+  Banks:
+  - {fileID: -65779078296178012}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 52048
