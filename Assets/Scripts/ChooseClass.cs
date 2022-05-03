@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class ChooseClass : MonoBehaviour
 {
@@ -159,6 +160,12 @@ public class ChooseClass : MonoBehaviour
 
     }
 
+    public void backButton(){
+
+         PhotonNetwork.Disconnect();
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
     private void shutoffButtonwarRPC()
     {
         photonView.RPC(nameof(shutoffwarButton), RpcTarget.AllBuffered, new object[]{PhotonNetwork.LocalPlayer.ActorNumber});

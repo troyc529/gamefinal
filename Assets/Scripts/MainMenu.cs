@@ -12,5 +12,11 @@ public class MainMenu : MonoBehaviour
         loading.SetActive(true);
 
     }
+
+    public void gameExit(){
+        
+        Application.Quit();
+
+    }
     
 }

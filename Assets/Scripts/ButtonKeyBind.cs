@@ -1,6 +1,7 @@
  using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class ButtonKeyBind : MonoBehaviour
 {
@@ -33,6 +34,8 @@ public class ButtonKeyBind : MonoBehaviour
     public Text aoeHealText;
 
     public Text bigShotText;
+
+
     void Start()
     {
         secondsBetween = 10f;
@@ -46,8 +49,17 @@ public class ButtonKeyBind : MonoBehaviour
 
     }
 
+     public void backButton(){
+
+         PhotonNetwork.Disconnect();
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+    }
+
     void Update()
     {
+
+
         AbilityOneElapsedTime += Time.deltaTime;
       
         AbilityTwoElapsedTime += Time.deltaTime;
