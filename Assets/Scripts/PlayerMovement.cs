@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Rigidbody2D Rb;
     public Animator animator;
+    
     PhotonView view;
 
     Vector2 movement;
@@ -20,9 +21,11 @@ public class PlayerMovement : MonoBehaviour
     private float elapsedTime;
 
     public GameObject arrow;
+
+    public GameObject BigAttack;
     private void Start()
     {
-
+        
         view = GetComponent<PhotonView>();
         elapsedTime = 0;
         BigSwingLookDir = new List<Vector2>(4);
@@ -117,7 +120,6 @@ public class PlayerMovement : MonoBehaviour
 
             Rb.MovePosition(Rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
-
         }
 
 
@@ -128,6 +130,7 @@ public class PlayerMovement : MonoBehaviour
     {
 
         animator.SetTrigger("Attack");
+        
 
         //Spawn Sword attack
         BigSwingLookDir.Add(new Vector2(transform.position.x + 1, transform.position.y));
