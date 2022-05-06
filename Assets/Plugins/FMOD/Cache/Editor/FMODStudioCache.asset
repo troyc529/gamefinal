@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637868369987478584
+  lastModified: 637874358806531107
   FileSizes:
   - Name: Desktop
     Value: 1062
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637868369987438453
+  lastModified: 637874358806531107
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/1stArea.bank
   Name: 1stArea
   StudioPath: bank:/1stArea
-  lastModified: 637868369987077263
+  lastModified: 637874358806431079
   FileSizes:
   - Name: Desktop
     Value: 699808
@@ -116,7 +116,7 @@ MonoBehaviour:
   - {fileID: -1948662604053275649}
   StringsBanks:
   - {fileID: -9161084910641736533}
-  cacheTime: 637868369987950153
+  cacheTime: 637874358806581115
   cacheVersion: 10
 --- !u!114 &311683941111463553
 MonoBehaviour:
@@ -133,7 +133,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/menuMusic.bank
   Name: menuMusic
   StudioPath: bank:/menuMusic
-  lastModified: 637868369987709357
+  lastModified: 637874358806581115
   FileSizes:
   - Name: Desktop
     Value: 685152
@@ -153,7 +153,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/3rdArea.bank
   Name: 3rdArea
   StudioPath: bank:/3rdArea
-  lastModified: 637868369987950153
+  lastModified: 637874358806511098
   FileSizes:
   - Name: Desktop
     Value: 694048
@@ -227,7 +227,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/2ndArea.bank
   Name: 2ndArea
   StudioPath: bank:/2ndArea
-  lastModified: 637868369987388293
+  lastModified: 637874358806471086
   FileSizes:
   - Name: Desktop
     Value: 502912
