@@ -502,6 +502,7 @@ MonoBehaviour:
   - 2ndArea
   - 3rdArea
   - menuMusic
+  - SFX
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0

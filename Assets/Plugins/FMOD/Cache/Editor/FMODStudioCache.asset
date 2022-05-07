@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637874358806531107
+  lastModified: 637874502265825402
   FileSizes:
   - Name: Desktop
-    Value: 1062
+    Value: 1386
   Exists: 1
+--- !u!114 &-8943713479092086062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TreeDeth
+  m_EditorClassIdentifier: 
+  Path: event:/TreeDeth
+  Guid:
+    Data1: -1960331803
+    Data2: 1248378737
+    Data3: -1831822164
+    Data4: -1916438660
+  Banks:
+  - {fileID: 4296918385090619099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 674
 --- !u!114 &-8047286399480296193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +74,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 52048
+--- !u!114 &-7848148940381666393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TreeHit
+  m_EditorClassIdentifier: 
+  Path: event:/TreeHit
+  Guid:
+    Data1: -1498709240
+    Data2: 1275967763
+    Data3: 782077080
+    Data4: -330790178
+  Banks:
+  - {fileID: 4296918385090619099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5878416571772289891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TreeDeath
+  m_EditorClassIdentifier: 
+  Path: event:/TreeDeath
+  Guid:
+    Data1: 432844876
+    Data2: 1259766212
+    Data3: -753023565
+    Data4: 866695608
+  Banks:
+  - {fileID: 4296918385090619099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &-5205366160252984429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/shield
+  m_EditorClassIdentifier: 
+  Path: event:/shield
+  Guid:
+    Data1: 281419261
+    Data2: 1110583770
+    Data3: -321498237
+    Data4: 382337855
+  Banks:
+  - {fileID: 4296918385090619099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &-1948662604053275649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +170,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637874358806531107
+  lastModified: 637874502265775238
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -82,7 +190,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/1stArea.bank
   Name: 1stArea
   StudioPath: bank:/1stArea
-  lastModified: 637874358806431079
+  lastModified: 637874502265233450
   FileSizes:
   - Name: Desktop
     Value: 699808
@@ -106,17 +214,25 @@ MonoBehaviour:
   - {fileID: -65779078296178012}
   - {fileID: 1760490179658399989}
   - {fileID: 429483167310213535}
+  - {fileID: 4296918385090619099}
   EditorEvents:
   - {fileID: 863634417142908441}
   - {fileID: 4235040325988002351}
   - {fileID: 1399053351514214878}
   - {fileID: -8047286399480296193}
+  - {fileID: -7848148940381666393}
+  - {fileID: -5878416571772289891}
+  - {fileID: 8508610380669046421}
+  - {fileID: 7052717951264362394}
+  - {fileID: 764386625884157680}
+  - {fileID: -5205366160252984429}
+  - {fileID: -8943713479092086062}
   EditorParameters: []
   MasterBanks:
   - {fileID: -1948662604053275649}
   StringsBanks:
   - {fileID: -9161084910641736533}
-  cacheTime: 637874358806581115
+  cacheTime: 637874502266402369
   cacheVersion: 10
 --- !u!114 &311683941111463553
 MonoBehaviour:
@@ -133,7 +249,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/menuMusic.bank
   Name: menuMusic
   StudioPath: bank:/menuMusic
-  lastModified: 637874358806581115
+  lastModified: 637874502266081399
   FileSizes:
   - Name: Desktop
     Value: 685152
@@ -153,11 +269,38 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/3rdArea.bank
   Name: 3rdArea
   StudioPath: bank:/3rdArea
-  lastModified: 637874358806511098
+  lastModified: 637874502265705004
   FileSizes:
   - Name: Desktop
     Value: 694048
   Exists: 1
+--- !u!114 &764386625884157680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/swordAttack
+  m_EditorClassIdentifier: 
+  Path: event:/swordAttack
+  Guid:
+    Data1: -1617401350
+    Data2: 1109642446
+    Data3: -1600479583
+    Data4: -248373140
+  Banks:
+  - {fileID: 4296918385090619099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &863634417142908441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -227,7 +370,7 @@ MonoBehaviour:
   Path: Assets/music/test/Build/Desktop/2ndArea.bank
   Name: 2ndArea
   StudioPath: bank:/2ndArea
-  lastModified: 637874358806471086
+  lastModified: 637874502265464211
   FileSizes:
   - Name: Desktop
     Value: 502912
@@ -259,3 +402,77 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 52048
+--- !u!114 &4296918385090619099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/music/test/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 637874502266402369
+  FileSizes:
+  - Name: Desktop
+    Value: 145536
+  Exists: 1
+--- !u!114 &7052717951264362394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/heal
+  m_EditorClassIdentifier: 
+  Path: event:/heal
+  Guid:
+    Data1: 824371928
+    Data2: 1109495833
+    Data3: 1682067355
+    Data4: 391292866
+  Banks:
+  - {fileID: 4296918385090619099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &8508610380669046421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Bow
+  m_EditorClassIdentifier: 
+  Path: event:/Bow
+  Guid:
+    Data1: -1593145006
+    Data2: 1185700796
+    Data3: 1160958374
+    Data4: -2086070682
+  Banks:
+  - {fileID: 4296918385090619099}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 253

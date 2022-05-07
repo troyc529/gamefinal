@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{c40a9d80-8ccb-4cc3-a614-eca7f4eb0377}">
+		<property name="assetPath">
+			<value>Forest-Defenders-SFX-SwordSwing.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.93750566893424037</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec900178-5f8e-4e1d-b982-06814b5fc79c}</destination>
+		</relationship>
+	</object>
+</objects>

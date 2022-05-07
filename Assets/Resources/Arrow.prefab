@@ -104,6 +104,13 @@ MonoBehaviour:
   player: {fileID: 0}
   playerDir: {x: 0, y: 0}
   BigArrow: 0
+  audioHit:
+    Guid:
+      Data1: -1593145006
+      Data2: 1185700796
+      Data3: 1160958374
+      Data4: -2086070682
+    Path: event:/Bow
 --- !u!114 &-3726086429927973060
 MonoBehaviour:
   m_ObjectHideFlags: 0

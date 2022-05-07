@@ -191,8 +191,17 @@ MonoBehaviour:
   lookDir: {x: 0, y: 0}
   shootDir: {x: 0, y: 0}
   HPTEXT: {fileID: 3571341049316620612}
+  animator: {fileID: 0}
   bossAttack: {fileID: 880262301397393097, guid: 58d1839ed9efd154daa8f282cf2d20a6,
     type: 3}
+  playerVictory: {fileID: 0}
+  audioHit:
+    Guid:
+      Data1: -1960331803
+      Data2: 1248378737
+      Data3: -1831822164
+      Data4: -1916438660
+    Path: event:/TreeDeth
 --- !u!1 &1963761352289074930
 GameObject:
   m_ObjectHideFlags: 0

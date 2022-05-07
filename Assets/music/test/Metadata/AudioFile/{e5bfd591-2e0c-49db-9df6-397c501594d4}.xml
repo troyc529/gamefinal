@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{e5bfd591-2e0c-49db-9df6-397c501594d4}">
+		<property name="assetPath">
+			<value>Forest-Defenders-CombatLevel2Transition.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>8.6747165532879826</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec900178-5f8e-4e1d-b982-06814b5fc79c}</destination>
+		</relationship>
+	</object>
+</objects>

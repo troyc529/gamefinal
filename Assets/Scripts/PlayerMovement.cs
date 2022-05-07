@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Photon.Pun;
+using FMODUnity;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class PlayerMovement : MonoBehaviour
     public GameObject arrow;
 
     public GameObject BigAttack;
+
+    [SerializeField] EventReference audioArrow;
     private void Start()
     {
         
@@ -131,6 +134,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetTrigger("Attack");
         
+        
 
         //Spawn Sword attack
         BigSwingLookDir.Add(new Vector2(transform.position.x + 1, transform.position.y));
@@ -149,6 +153,9 @@ public class PlayerMovement : MonoBehaviour
 
     public void bigShotAttack(int damage)
     {
+        var audioEvent = RuntimeManager.CreateInstance(audioArrow);
+            audioEvent.start();
+            audioEvent.release();
       
          animator.SetTrigger("Attack");
             var test = gameObject;
@@ -170,6 +177,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (gameObject.tag == "Range")
         {
+            var audioEvent = RuntimeManager.CreateInstance(audioArrow);
+            audioEvent.start();
+            audioEvent.release();
             //Play attack animation
             animator.SetTrigger("Attack");
 

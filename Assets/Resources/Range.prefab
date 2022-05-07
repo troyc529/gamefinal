@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c0691826040fd4ba5fec20778150bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 100
+  HP: 80
   HPTEXT: {fileID: 3958558766710028555}
   ArmorText: {fileID: 8492335197110181931}
   Armor: 0
@@ -276,6 +276,13 @@ MonoBehaviour:
   shootDir: {x: 0, y: 0}
   arrow: {fileID: 220745487326778354, guid: c7e33e8d5ad8e6b43898fbc1a9c19cb7, type: 3}
   BigAttack: {fileID: 0}
+  audioArrow:
+    Guid:
+      Data1: -1593145006
+      Data2: 1185700796
+      Data3: 1160958374
+      Data4: -2086070682
+    Path: event:/Bow
 --- !u!95 &1699219848369951516
 Animator:
   serializedVersion: 3

@@ -41,8 +41,8 @@ public class SpawnEnemies : MonoBehaviour
                 count = Random.Range(0, 2);
                 elapsedTime = 0;
 
-                randomPos[0] = new Vector3(Random.Range(3, 15), Random.Range(13, 15), 0f);
-                randomPos[1] = new Vector3(Random.Range(6, 13), Random.Range(6, 9), 0f);
+                randomPos[0] = new Vector3(Random.Range(3, 15), Random.Range(8, 17), 0f);
+                randomPos[1] = new Vector3(Random.Range(3, 15), Random.Range(6, 12), 0f);
                 //PhotonNetwork.Instantiate(EnemyPrefab.name, random, Quaternion.identity);
                 var enemy = PhotonNetwork.InstantiateRoomObject(EnemyPrefab.name, randomPos[count], Quaternion.identity);
                 //  enemy.gameObject.transform.position = random;

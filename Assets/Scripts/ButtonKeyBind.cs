@@ -1,7 +1,8 @@
- using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using UnityEngine.SceneManagement;
+using FMODUnity;
 
 public class ButtonKeyBind : MonoBehaviour
 {
@@ -36,6 +37,7 @@ public class ButtonKeyBind : MonoBehaviour
     public Text bigShotText;
 
 
+
     void Start()
     {
         secondsBetween = 10f;
@@ -49,10 +51,11 @@ public class ButtonKeyBind : MonoBehaviour
 
     }
 
-     public void backButton(){
+    public void backButton()
+    {
 
-         PhotonNetwork.Disconnect();
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        PhotonNetwork.Disconnect();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
     }
 
@@ -61,9 +64,9 @@ public class ButtonKeyBind : MonoBehaviour
 
 
         AbilityOneElapsedTime += Time.deltaTime;
-      
+
         AbilityTwoElapsedTime += Time.deltaTime;
-     
+
 
         if (buffArmor.interactable == false)
         {
@@ -123,6 +126,7 @@ public class ButtonKeyBind : MonoBehaviour
                 aoeHeal.onClick.Invoke();
                 aoeHeal.interactable = false;
                 AbilityOneElapsedTime = 0f;
+              
             }
         }
 

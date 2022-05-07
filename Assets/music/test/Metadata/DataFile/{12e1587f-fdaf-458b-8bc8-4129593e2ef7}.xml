@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{12e1587f-fdaf-458b-8bc8-4129593e2ef7}">
+		<property name="assetPath">
+			<value>Hammer Hit I  Sound Effect I.mp3</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec900178-5f8e-4e1d-b982-06814b5fc79c}</destination>
+		</relationship>
+	</object>
+</objects>

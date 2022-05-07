@@ -257,7 +257,7 @@ MonoBehaviour:
   HP: 100
   HPTEXT: {fileID: 3958558766710028555}
   ArmorText: {fileID: 8492335197110181931}
-  Armor: 5
+  Armor: 6
 --- !u!114 &1699219848369951488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,6 +278,13 @@ MonoBehaviour:
   arrow: {fileID: 6895512970216268036, guid: 7d253dcc653c5f843867412600413a89, type: 3}
   BigAttack: {fileID: 6895512970216268036, guid: 0d7e95acc027ea04e85c77a01ebbc3c6,
     type: 3}
+  audioArrow:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!95 &1699219848369951516
 Animator:
   serializedVersion: 3

@@ -10,9 +10,9 @@ public class ArmorPressController : MonoBehaviour{
     }
 
     // Update is called once per frame
-    void Update(){
-        if(Input.GetKeyDown(KeyCode.Q)){
+    public void ArmorUpAnimation(){
+     
             animation.Play("ArmorUp");
-        }
+        
     }
 }

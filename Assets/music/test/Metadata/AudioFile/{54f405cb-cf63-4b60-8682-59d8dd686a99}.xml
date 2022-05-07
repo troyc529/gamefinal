@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{54f405cb-cf63-4b60-8682-59d8dd686a99}">
+		<property name="assetPath">
+			<value>Forest-Defenders-CombatLevel2.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>34.698775510204079</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{ec900178-5f8e-4e1d-b982-06814b5fc79c}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using FMODUnity;
 public class BossMechanics : MonoBehaviour
 {
 
@@ -22,7 +23,13 @@ public class BossMechanics : MonoBehaviour
     private float secondsBetweenSpawn;
     private float DeathTime;
 
+       public Animator animator;
+
     public GameObject bossAttack;
+
+    public GameObject playerVictory;
+
+     [SerializeField] EventReference audioHit;
 
     void Awake()
     {
@@ -32,7 +39,7 @@ public class BossMechanics : MonoBehaviour
         photonView = this.GetComponent<PhotonView>();
         Physics2D.IgnoreLayerCollision(10, 14);
         secondsBetweenSpawn = 2.5f;
-        
+        playerVictory = GameObject.Find("UI");
     }
 
 
@@ -60,7 +67,11 @@ public class BossMechanics : MonoBehaviour
         {
             DeathTime += Time.deltaTime;
             collider.enabled = false;
-            Debug.Log("DEATH HE DIED");
+           // animator.SetTrigger("Death");
+             var audioEvent = RuntimeManager.CreateInstance(audioHit);
+            audioEvent.start();
+            audioEvent.release();
+            playerVictory.GetComponent<UIEnableDeath>().enablePlayerWinUI();
             if(DeathTime > .5f ){
                 Destroy(gameObject);
             }

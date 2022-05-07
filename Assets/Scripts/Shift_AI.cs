@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
+using FMODUnity;
 public class Shift_AI : MonoBehaviour
 {
 
@@ -15,11 +16,10 @@ public class Shift_AI : MonoBehaviour
     public Vector2 lookDir;
     public Vector2 shootDir;
      private BoxCollider2D collider;
-
      public Text HPTEXT;
-    
-
     private float DeathTime;
+  
+    public GameObject soundFX;
 
     void Awake()
     {
@@ -28,6 +28,7 @@ public class Shift_AI : MonoBehaviour
         this.gameObject.transform.parent = GameObject.Find("EnemyAI").transform;
         photonView = this.GetComponent<PhotonView>();
         Physics2D.IgnoreLayerCollision(10, 10);
+    
     }
 
 
@@ -41,7 +42,7 @@ public class Shift_AI : MonoBehaviour
             DeathTime += Time.deltaTime;
             collider.enabled = false;
             animator.SetTrigger("Death");
-            Debug.Log("DEATH HE DIED");
+            soundFX.SetActive(true);
             if(DeathTime > .5f ){
                 Destroy(gameObject);
             }

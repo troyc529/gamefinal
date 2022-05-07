@@ -49,7 +49,7 @@ public class SpecialAbilityPlayer : MonoBehaviour
             players = GameObject.Find("Players");
             for (int i = 0; i < players.transform.childCount; i++)
             {
-                players.transform.GetChild(i).gameObject.GetComponent<Shift_Player>().updateHPRPC(25);
+                players.transform.GetChild(i).gameObject.GetComponent<Shift_Player>().updateHPRPC(20);
             }
         }
     }

@@ -10,9 +10,9 @@ public class HealPressController : MonoBehaviour{
     }
 
     // Update is called once per frame
-    void Update(){
-        if(Input.GetKeyDown(KeyCode.Q)){
+    public void healAnimator(){
+       
             animation.Play("Heal");
-        }
+        
     }
 }

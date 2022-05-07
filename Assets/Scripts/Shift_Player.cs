@@ -38,7 +38,7 @@ public class Shift_Player : MonoBehaviour
 
     void Update()
     {
-        elapsedTime+= Time.deltaTime;
+        elapsedTime += Time.deltaTime;
         updateHPTEXT();
         updateARMORTEXT();
         playerDeathRPC();
@@ -48,40 +48,46 @@ public class Shift_Player : MonoBehaviour
 
 
 
-    public void playerDeathRPC(){
+    public void playerDeathRPC()
+    {
 
         photonView.RPC(nameof(playerDeath), RpcTarget.AllBuffered);
     }
     [PunRPC]
-    private void playerDeath(){
-        if(HP <= 0){
-            Debug.Log("PLayer Dead");
-             if(photonView.IsMine){
-           pDeath.GetComponent<UIEnableDeath>().enableDeathUI();
-             }
+    private void playerDeath()
+    {
+        if (HP <= 0)
+        {
+            if (photonView.IsMine)
+            {
+                pDeath.GetComponent<UIEnableDeath>().enableDeathUI();
+            }
             gameObject.SetActive(false);
         }
 
     }
-        public void takeDamageRPC(int damage)
+    public void takeDamageRPC(int damage)
     {
-        photonView.RPC(nameof(takeDamage), RpcTarget.AllBuffered, new object[]{damage});
+        photonView.RPC(nameof(takeDamage), RpcTarget.AllBuffered, new object[] { damage });
     }
 
 
     [PunRPC]
     private void takeDamage(int damage)
     {
-        if(elapsedTime > 1f){
+        if (elapsedTime > 1f)
+        {
             elapsedTime = 0f;
-        if(Armor > 0){
-            Armor -= 1;
+            if (Armor > 0)
+            {
+                Armor -= 1;
+            }
+            else
+            {
+                HP -= damage;
+            }
         }
-        else{
-        HP -= damage;
-        }
-        }
-    
+
 
     }
 
@@ -93,11 +99,23 @@ public class Shift_Player : MonoBehaviour
     [PunRPC]
     private void updateArmor(int num)
     {
-        Armor += num;
-        if (Armor > 10)
+        if (gameObject.tag == "Melee")
         {
-            Armor = 10;
+            Armor += num;
+            if (Armor > 6)
+            {
+                Armor = 6;
+            }
         }
+        else
+        {
+            Armor += num;
+            if (Armor > 3)
+            {
+                Armor = 3;
+            }
+        }
+
     }
 
     //  public void updateHPARMORRPC(){
@@ -114,7 +132,7 @@ public class Shift_Player : MonoBehaviour
     //    photonView.RPC(nameof(updateHPTEXT), RpcTarget.All);
     //  }
 
-   // [PunRPC] RECENT CHANGE
+    // [PunRPC] RECENT CHANGE
     private void updateHPTEXT()
     {
         HPTEXT.text = HP.ToString();
@@ -128,11 +146,25 @@ public class Shift_Player : MonoBehaviour
     [PunRPC]
     private void updateHP(int num)
     {
-        HP += num;
-        if (HP > 100)
+        if (gameObject.tag == "Melee")
         {
-            HP = 100;
+            HP += num;
+            if (HP > 100)
+            {
+                HP = 100;
+            }
+
         }
+        else
+        {
+            HP += num;
+            if (HP > 80)
+            {
+                HP = 80;
+            }
+        }
+
+
     }
 
 

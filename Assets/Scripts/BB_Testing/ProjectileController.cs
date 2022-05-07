@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Photon.Pun;
+using FMODUnity;
 
 public class ProjectileController : MonoBehaviour
 {
@@ -19,6 +19,8 @@ public class ProjectileController : MonoBehaviour
     public bool BigArrow;
 
     private float elapsedTime;
+
+    [SerializeField] EventReference audioHit;
 
     // Controls the projectile's velocity and call for collision.
     void Start()
@@ -97,10 +99,16 @@ public class ProjectileController : MonoBehaviour
         if (collision.gameObject.tag == "enemy")
         {
             collision.gameObject.GetComponent<Shift_AI>().takeDamageRPC(damage);
+              var audioEvent = RuntimeManager.CreateInstance(audioHit);
+            audioEvent.start();
+            audioEvent.release();
         }
 
         if(collision.gameObject.tag == "boss"){
             collision.gameObject.GetComponent<BossMechanics>().takeDamageRPC(damage);
+              var audioEvent = RuntimeManager.CreateInstance(audioHit);
+            audioEvent.start();
+            audioEvent.release();
         }
         if(!BigArrow){
           
